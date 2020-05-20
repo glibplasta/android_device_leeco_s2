@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+    <remote name="vendor"
+            fetch="https://github.com"
+            revision="ten-rebase" />
+	
+    <remote name="device"
+            fetch="https://github.com"
+            revision="ten-rebase"/>
+
+    <remote name="kernel"
+            fetch="https://github.com"
+            revision="arrow-10.0"/>
+
+    <!--Device Trees-->
+    <project path="device/leeco/s2" name="nullbytepl/android_device_leeco_s2" remote="device" />
+
+
+    <!--Kernel-->
+    <project path="kernel/leeco/s2" name="nullbytepl/android_kernel_leeco_msm8976" remote="kernel" />
+
+
+
+    <!-- Vendor folders -->
+    <project path="vendor/leeco/s2" name="nullbytepl/android_vendor_leeco_s2" remote="vendor" />
+</manifest>
